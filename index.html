@@ -4,21 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Amit Trivedi &mdash; Senior UI Engineer, Frontend Engineer &amp; UI/UX
-      Designer
+      Amit Trivedi &mdash; Lead UI/UX Designer &amp; Frontend Developer
     </title>
     <meta
       name="description"
-      content="Amit Trivedi - Senior UI Engineer, Frontend Engineer &amp; UI/UX Designer specializing in AI-assisted development. 12+ years bridging product design and frontend code, from Figma to production React."
+      content="Amit Trivedi - Lead UI/UX Designer &amp; Frontend Developer with 12+ years bridging product design and frontend code. Figma to responsive frontends, design systems, and AI-assisted React. Leads a team of 5."
     />
     <meta name="author" content="Amit Trivedi" />
     <meta
       property="og:title"
-      content="Amit Trivedi - Senior UI Engineer | Frontend Engineer | UI/UX Designer"
+      content="Amit Trivedi - Lead UI/UX Designer & Frontend Developer"
     />
     <meta
       property="og:description"
-      content="12+ years turning complex requirements into pixel-perfect, responsive, accessible interfaces. Figma to production React."
+      content="12+ years turning complex requirements into pixel-perfect, responsive, accessible interfaces. Figma to responsive frontends, design systems, and AI-assisted React."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://amitt4352.github.io/portfolio/" />
@@ -31,11 +30,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Amit Trivedi - UI Engineer / Design Engineer"
+      content="Amit Trivedi - Lead UI/UX Designer & Frontend Developer"
     />
     <meta
       name="twitter:description"
-      content="Senior UI Engineer, Frontend Engineer & UI/UX Designer - 12+ years bridging Figma design and production frontend code."
+      content="Lead UI/UX Designer & Frontend Developer - 12+ years bridging Figma design and production frontend code."
     />
     <meta
       name="twitter:image"
@@ -49,8 +48,8 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Amit Trivedi",
-        "jobTitle": "Senior UI Engineer / Design Engineer",
-        "description": "Senior UI Engineer, Frontend Engineer and UI/UX Designer with 12+ years bridging product design and frontend code.",
+        "jobTitle": "Lead UI/UX Designer & Frontend Developer",
+        "description": "Lead UI/UX Designer and Frontend Developer with 12+ years bridging product design and frontend code, leading a team of UI/UX designers and React developers.",
         "url": "https://amitt4352.github.io/portfolio/",
         "email": "mailto:amitt4352@gmail.com",
         "telephone": "+91-89648-36439",
@@ -59,17 +58,22 @@
           "addressLocality": "Indore",
           "addressCountry": "IN"
         },
-        "sameAs": ["https://www.linkedin.com/in/amit4352"],
+        "sameAs": [
+          "https://www.linkedin.com/in/amit4352",
+          "https://www.behance.net/amittrivedi15"
+        ],
         "knowsAbout": [
-          "UI Engineering",
-          "Frontend Development",
           "UI/UX Design",
+          "Frontend Development",
+          "UI Engineering",
           "Figma",
           "Design Systems",
-          "React",
           "HTML",
           "CSS",
+          "SCSS",
           "JavaScript",
+          "jQuery",
+          "React",
           "Accessibility"
         ],
         "alumniOf": {
@@ -394,6 +398,7 @@
         display: flex;
         align-items: center;
         gap: 11px;
+        white-space: nowrap;
       }
       .brand .mark {
         width: 30px;
@@ -1309,6 +1314,33 @@
         .hero-socials {
           margin-left: 0;
         }
+        /* Compact nav so brand, theme, résumé and menu fit one row */
+        .nav-inner {
+          height: 62px;
+        }
+        .brand {
+          font-size: 1rem;
+        }
+        .brand .mark {
+          width: 26px;
+          height: 26px;
+          font-size: 0.74rem;
+        }
+        .nav-cta {
+          gap: 8px;
+        }
+        .icon-btn {
+          width: 38px;
+          height: 38px;
+        }
+        /* Résumé becomes an icon-only button on phones */
+        .nav-resume {
+          padding: 10px;
+          gap: 0;
+        }
+        .nav-resume .btn-label {
+          display: none;
+        }
       }
       @media (prefers-reduced-motion: reduce) {
         html {
@@ -1391,11 +1423,12 @@
             </svg>
           </button>
           <a
-            class="btn btn-primary"
+            class="btn btn-primary nav-resume"
             href="assets/Amit_Trivedi_Resume.pdf"
             target="_blank"
             rel="noopener"
             download
+            aria-label="Download r&eacute;sum&eacute;"
           >
             <svg
               viewBox="0 0 24 24"
@@ -1407,7 +1440,7 @@
             >
               <path d="M12 3v12M7 11l5 5 5-5M5 21h14" />
             </svg>
-            R&eacute;sum&eacute;
+            <span class="btn-label">R&eacute;sum&eacute;</span>
           </a>
           <button
             class="nav-toggle"
@@ -1435,15 +1468,16 @@
             <span class="line grad-text">Trivedi.</span>
           </h1>
           <p class="hero-role" data-reveal data-delay="2">
-            Senior UI Engineer <span class="sep">|</span> Frontend Engineer
-            <span class="sep">|</span> UI/UX Designer
-            <span class="sep">|</span> AI-Assisted Development
+            Lead UI/UX Designer <span class="sep">|</span> Frontend Developer
+            <span class="sep">|</span> AI-Assisted React
+            <span class="sep">|</span> Design Systems
           </p>
           <p class="hero-lead" data-reveal data-delay="2">
             I turn complex requirements into
             <b>pixel-perfect, responsive, accessible</b> interfaces &mdash;
             <b>12+ years</b> bridging product design and frontend code, from
-            Figma wireframes to production React, now accelerated with
+            Figma wireframes to responsive frontends and design systems, now
+            <b>leading a small team</b> and shipping React with
             <b>AI-assisted</b> workflows.
           </p>
           <div class="hero-cta" data-reveal data-delay="3">
@@ -1536,26 +1570,27 @@
           <div class="about-grid">
             <div data-reveal>
               <p>
-                I'm a Senior UI Engineer, Frontend Engineer, and UI/UX Designer
-                based in <b>Indore, India</b>, with 12+ years of experience
-                turning complex requirements into pixel-perfect, responsive, and
+                I'm a <b>Lead UI/UX Designer &amp; Frontend Developer</b> based
+                in <b>Indore, India</b>, with 12+ years of experience turning
+                complex requirements into pixel-perfect, responsive, and
                 accessible web interfaces. I work end to end &mdash; from
                 wireframes and interactive prototypes in <b>Figma</b> to
-                production-ready, responsive code.
+                production-ready, responsive code in HTML, CSS/SCSS, JavaScript
+                and jQuery.
               </p>
               <p>
                 Over my career I've delivered <b>500+ screens</b> and reusable
                 <b>design systems</b> across enterprise products. More recently,
-                I've been building production <b>React</b> applications using
-                AI-assisted development workflows (<b
-                  >Cursor, GitHub Copilot, Claude</b
-                >) that let me ship complete, polished frontends faster.
+                I ship production <b>React</b> applications using AI-assisted
+                development workflows (<b>Cursor, GitHub Copilot, Claude</b>) and
+                direct and review my team's React work to keep frontends
+                complete, polished, and consistent.
               </p>
               <p>
-                I also <b>lead and mentor</b> junior designers and developers
-                within Agile/Scrum teams, run design and code reviews, and care
-                deeply about accessibility, performance, and consistency across
-                every screen.
+                I <b>lead a team of 2 UI/UX designers and 3 React developers</b>
+                within Agile/Scrum, run design and code reviews, and care deeply
+                about accessibility, performance, and consistency across every
+                screen.
               </p>
             </div>
             <div class="glass do-card" data-reveal data-delay="1">
@@ -1662,6 +1697,7 @@
                 <span class="chip">HTML5</span><span class="chip">CSS3</span
                 ><span class="chip">SCSS / SASS</span>
                 <span class="chip">JavaScript (ES6+)</span
+                ><span class="chip">jQuery</span
                 ><span class="chip">Responsive Design</span>
                 <span class="chip">Accessibility (WCAG)</span
                 ><span class="chip">CSS Animations</span
@@ -1732,6 +1768,7 @@
                 <span class="chip">React.js</span><span class="chip">Redux</span
                 ><span class="chip">Component Architecture</span>
                 <span class="chip">Hooks</span
+                ><span class="chip">React Router</span
                 ><span class="chip">REST API Integration</span>
               </div>
             </div>
@@ -1850,8 +1887,9 @@
                 <p>
                   Designed the complete UI/UX in Figma and built it into a
                   production React application for Pair Distribution Function
-                  (PDF) analysis of X-ray diffraction data. Delivered Dashboard,
-                  Upload, Processing, Analysis, and Query Window modules, with
+                  (PDF) analysis of X-ray diffraction data. Delivered 25+ screens
+                  across Dashboard, Upload, Processing, Analysis, and Query
+                  Window modules, with
                   interactive data-visualization charts (Background Correction,
                   Data Smoothing, S(Q), T(r)) with live updates, Redux state
                   management, and REST API integration.
@@ -2110,17 +2148,19 @@
           <div class="timeline">
             <div class="tl-item" data-reveal>
               <div class="tl-date">Jan 2019 &mdash; Present</div>
-              <h3>Senior UI Engineer &amp; Frontend Engineer</h3>
+              <h3>Lead UI/UX Designer &amp; Frontend Developer</h3>
               <div class="tl-co">
                 Empower Integrated Solutions Pvt. Ltd. &middot; Indore, India
               </div>
               <p>
-                Lead UI/UX design and frontend development across 4+ enterprise
-                web products &mdash; owning the full design lifecycle from
-                wireframes and interactive prototypes to production interfaces.
-                Maintain a reusable Figma design system, build production React
-                (AI-assisted), integrate REST APIs, and mentor junior designers
-                and developers through design and code reviews.
+                Lead a team of <b>2 UI/UX designers and 3 React developers</b>
+                across 4+ enterprise web products &mdash; owning the full design
+                lifecycle from wireframes and interactive prototypes to
+                production interfaces. Maintain a reusable Figma design system
+                (50+ components) that cut handoff and rework by ~25&ndash;40%,
+                build responsive frontends (HTML/CSS/SCSS, JavaScript, jQuery),
+                and ship React ~40&ndash;60% faster with AI-assisted workflows
+                while directing and reviewing the team's work.
               </p>
             </div>
             <div class="tl-item" data-reveal>
@@ -2133,8 +2173,8 @@
                 Converted high-fidelity designs into semantic, SEO-friendly,
                 cross-browser HTML/CSS with full responsiveness, and built style
                 guides and reusable UI components for consistency. Optimized CSS
-                architecture and frontend assets to improve page-load
-                performance.
+                architecture and frontend assets, improving page-load
+                performance by ~30&ndash;50%.
               </p>
             </div>
             <div class="tl-item" data-reveal>
@@ -2349,7 +2389,7 @@
       <div class="wrap foot-inner">
         <span
           >&copy; <span id="year"></span> <strong>Amit Trivedi</strong> &mdash;
-          UI Engineer &middot; Frontend Engineer &middot; UI/UX Designer</span
+          Lead UI/UX Designer &middot; Frontend Developer</span
         >
         <a class="to-top" href="#top" aria-label="Back to top">
           <svg
